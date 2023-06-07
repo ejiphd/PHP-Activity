@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Poppins:wght@200&display=swap');
+
+*{
+    font-family:  'Nunito', sans-serif;
+}
+
+
+.search{
+    color: gray;
+}
+.search:hover{
+    background-color:none;
+    color:gray;
+}
+.innerloginbtn{
+    float: right;
+    margin-top: 10px;
+}
+.login-btn{
+    margin-right: 5px;
+    color: rgb(80,80,80);
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 50px;
+    border: 1px solid rgb(80,80,80);
+}
+.signup-btn{
+    background-color: rgb(255, 187, 32);
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 50px;
+}
+.login-btn:hover{
+    background-color: rgb(116, 117, 117);
+    color: white;
+}
+.signup-btn:hover{
+    background-color: white;
+    color:rgb(255, 187, 32);
+    border: 1px solid rgb(255, 187, 32);
+}
+.banner-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.banner-side img{
+    width: 100%;
+}
+.banner-side:nth-child(1){
+    padding-top: 50px;
+    padding-left: 30px;
+    background-color: rgb(246, 246, 246);
+}
+.banner-side:nth-child(1) h4{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.banner-side:nth-child(1) h5{
+    font-size: 15px;
+    font-weight: bold;
+}
+.shopnow-btn{
+    color:black;
+    text-decoration: none;
+    background-color: rgb(255, 187, 32);
+    padding: 10px;
+    border-radius: 50px;
+}
+
+.features-container{
+    margin-top: 50px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 20px;
+}
+.features{
+    display: flex;
+    gap: 5px;
+}
+.features i{
+    border: 2px solid rgb(255, 187, 32);
+    border-radius: 60px;
+    color: rgb(255, 187, 32);
+    font-size: 30px;
+    padding: 30px;
+}
+@media screen and (max-width:1024px){
+    .features i{
+        border: 2px solid rgb(255, 187, 32);
+        border-radius: 100px;
+        color: rgb(255, 187, 32);
+        font-size: 30px;
+        padding: 30px;
+        height: 100px;
+    }
+}
+.features h5{
+    font-weight: bold;
+}
+
+.FD-MainContainer{
+    border:1px solid rgb(180, 180, 180);
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 120px;
+}
+.FD-Container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+.FlashDeals{
+    display: flex;
+    gap: 10px;
+    background-color: rgb(240, 238, 238);
+    border-radius: 10px;
+    padding: 10px;
+}
+.FlashDeals img{
+    width: 50%;
+}
+
+
+.HD-MainContainer{
+    margin-top: 50px;
+    padding: 20px;
+}
+.HD-Container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    row-gap: 20px;
+}
+@media screen and (max-width:1024px){
+    .HD-Container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+}
+
+footer{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-top: 80px;
+    padding: 40px;
+    background-color: rgb(226, 226, 226);
+    gap: 10px;
+    row-gap: 20px;
+}
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
+.message-btn{
+    padding: 10px;
+    background-color:rgb(255, 187, 32);
+    text-decoration: none;
+    color: black;
+    border-radius: 10px;
+}
+.footer-content h5{
+    font-weight: bold;
+}
+.footer-content:last-child{
+    grid-column: 1/5;
+    text-align: center;
+}
+
+.menu-btn{
+    text-decoration: none;
+    color: rgb(56, 56, 56);
+    margin-left: 30px;
+    font-size: 20px;
+}
+.menu-btn:hover{
+    text-decoration: none;
+    color: rgb(255, 187, 32);
+    margin-left: 30px;
+    font-size: 20px;
+}
+.FD-Cart{
+    text-decoration: none;
+    color: rgb(56, 56, 56);
+    background-color: rgb(255, 187, 32);
+    padding: 10px;
+    border-radius: 50px;
+}
+.FD-Cart:hover{
+    color: rgb(255, 187, 32);
+    background-color: rgb(73, 73, 73);
+    padding: 10px;
+    border-radius: 50px;
+}
+.HD-Cart{
+    text-decoration: none;
+    color: rgb(56, 56, 56);
+    background-color: rgb(255, 187, 32);
+    padding: 10px 70px;
+    border-radius: 50px;
+    
+}
+.HD-Cart:hover{
+    color: rgb(255, 187, 32);
+    background-color: rgb(73, 73, 73);
+    padding: 10px 70px;
+    border-radius: 50px;
+}
+.Checkout-btn{
+    text-decoration: none;
+    color: rgb(56, 56, 56);
+    background-color: rgb(255, 187, 32);
+    padding: 10px 70px;
+    border-radius: 50px;
+    
+}
+.Checkout-btn:hover{
+    color: rgb(255, 187, 32);
+    background-color: rgb(73, 73, 73);
+    padding: 10px 70px;
+    border-radius: 50px;
+}
+#total{
+    font-size: 18px;
+}

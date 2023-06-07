@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documents</title>
+    <link rel="stylesheet" href="../Assets/style/landingpage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-light ">
+        <div class="container-fluid">
+            <a class="navbar-brand fst-italic fw-bold" href="#">No.Shop</a>
+            <button class="navbar-toggler text-white border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarContent" aria-controls="navbarContent" >
+            <span class="bi bi-three-dots-vertical"></span>
+            </button>
+            
+            <!-- offcanvas -->
+            <div class="offcanvas offcanvas-start bg-dark w-50" tabindex="-1" id="navbarContent" aria-labelledby="navbarContentLabel">
+                <div class="offcanvas-header">
+                    <h5 class="text-white">Coffee Blog</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <form class="d-flex input-group w-100" role="search">
+                        <input class="form-control rounded-end-0  rounded-start-5 border border-1 border-end-0" type="search" placeholder="Search" aria-label="Search">
+                        <button class="ps-3 pe-3 border border-1 border-start-0 rounded-start-0 rounded-5 bg-white search" type="submit">
+                            <span><i class="fas fa-search"></i></span>
+                        </button>
+                    </form>
+                    
+                </div>
+            </div>
+            <div class=" w-100">
+                <div class="innerloginbtn ">
+                    <a class=" menu-btn" data-bs-toggle="offcanvas" href="#offcanvasCart" role="button" aria-controls="offcanvasExample"><i class="fas fa-cart-plus"></i></a>
+                    <a class=" menu-btn" data-bs-toggle="offcanvas" href="#offcanvasAccount" role="button" aria-controls="offcanvasExample"><i class="fas fa-user" ></i></a>  
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="offcanvas offcanvas-end " tabindex="-1" id="offcanvasCart" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">    
+            <h4 id="head-title" class="fw-bold">Cart</h4>
+            <a href="#" class="btn" data-bs-dismiss="offcanvas" id="closeBtn">
+                <i class="fas fa-close"></i>
+            </a>
+        </div>
+            
+        <div class="offcanvas-body">
+            <ul id="cart"></ul>
+        </div>
+        <div class="offcanvas-footer p-2">
+            <div class="row">
+                <div class="col-12">
+                    <h4 id="total" class="fw-bold">Total Price: </h4>
+                </div>
+                <div class="col-12 text-center">
+                    <a href="checkout.html" class="Checkout-btn" id="checkoutBtn">Checkout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="offcanvas offcanvas-end w-25" tabindex="-1" id="offcanvasAccount" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-body">
+                <a href="#" class="text-dark text-decoration-none fs-5"> <i class="fas fa-user"></i> Account</a><br>
+                <a href="#" class="text-dark text-decoration-none fs-5"> <i class="fas fa-gear"></i> Settings</a><br>
+                <a href="#" class="text-dark text-decoration-none fs-5"> <i class="fas fa-message"></i> Messages</a><br>
+                <a href="#" class="text-dark text-decoration-none fs-5"> <i class="fas fa-phone"></i> Contacts</a><br>
+                <hr>
+                <a href="../index.html" class="text-dark text-decoration-none fs-5"> <i class="fas fa-right-from-bracket"></i> Logout</a>
+        </div>
+        
+    </div>
+    
+    <div class="category d-flex">
+        <!-- 1 -->
+        <div class="dropdown">
+            <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Men's Apparel
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Tops</a></li>
+              <li><a class="dropdown-item" href="#">Shorts</a></li>
+              <li><a class="dropdown-item" href="#">Pants</a></li>
+              <li><a class="dropdown-item" href="#">Jeans</a></li>
+              <li><a class="dropdown-item" href="#">Others</a></li>
+            </ul>
+        </div>
+        <!-- 2 -->
+        <div class="dropdown">
+            <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Women's Apparel
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Tops</a></li>
+              <li><a class="dropdown-item" href="#">Shorts</a></li>
+              <li><a class="dropdown-item" href="#">Pants</a></li>
+              <li><a class="dropdown-item" href="#">Dresses</a></li>
+              <li><a class="dropdown-item" href="#">Others</a></li>
+            </ul>
+        </div>
+        <!-- 3 -->
+        <div class="dropdown">
+            <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Mobile & Gadgets
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Gaming</a></li>
+              <li><a class="dropdown-item" href="#">Console</a></li>
+              <li><a class="dropdown-item" href="#">Others</a></li>
+            </ul>
+        </div>
+        <!-- 4 -->
+        <div class="dropdown">
+            <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Shoes
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Women</a></li>
+              <li><a class="dropdown-item" href="#">Men</a></li>
+              <li><a class="dropdown-item" href="#">Kids</a></li>
+              <li><a class="dropdown-item" href="#">Unisex</a></li>
+            </ul>
+        </div>
+        <!-- 5 -->
+        <div class="dropdown">
+            <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Bag
+            </a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Women</a></li>
+                <li><a class="dropdown-item" href="#">Men</a></li>
+                <li><a class="dropdown-item" href="#">Kids</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- banner -->
+    <div class="banner-container">
+        <div class="banner-side">
+            <p>Shoes New Collection</p>
+            <h4>Nike City Rep TR</h4>
+            <h5>UPTO 50% OFF</h5>
+            <br>
+            <a href="#" class="shopnow-btn">Shop Now!</a>
+        </div>
+        <div class="banner-side">
+            <img src="../Assets/Images/Carousel/Nike-City.jpg" alt="">
+        </div>
+    </div>
+
+    <!-- features -->
+    <div class="features-container">
+        <div class="features">
+            <i class="fas fa-truck-fast"></i>
+            <div>
+                <h5>Free Delivery</h5>
+                <p>Get free delivery for every order above &#8369;100</p>
+            </div>
+                
+
+        </div>
+        <div class="features">
+            <i class="fas fa-right-left"></i>
+            <div>
+                <h5> 90 Days Return</h5>
+                <p>Return within 90days of receiving your order.</p>
+            </div>
+        </div>
+        <div class="features">
+            <i class="fas fa-credit-card"></i>
+            <div>
+                <h5>Secure Payment</h5>
+                <p>100% secure payment. Get easy support anytime</p>
+            </div>
+        </div>
+        <div class="features">
+            <i class="fas fa-headset"></i>
+            <div>
+                <h5>24/7 Onnline Support</h5>
+                <p>Dedicated support anytime and Anywhere.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- flash deals -->
+    <div class="FD-MainContainer container-sm w-100">
+        <h4 class="fw-bold"><i class="fas fa-bolt-lightning" style="color:rgb(255, 187, 32);" ></i> Flash Deals</h4>
+        <div class="FD-Container">
+            <div class="FlashDeals productimg">
+                <div class="productCards">
+                    <h5 class="fw-bold">Playstation 5</h5><br>
+                    <p class="fw-bold price" data-price="30000" style="color:rgb(255, 187, 32);">&#8369; 30,000</p>
+                    <br>
+                    <a href="#" class="FD-Cart addCart"> <i class="fas fa-cart-plus"></i> Add to Cart</a>
+                </div>
+                <img src="../Assets/Images/MobileAndGadgets/PS5.png" alt="">
+            </div>
+            <div class="FlashDeals productimg">
+                <div class="productCards">
+                    <h5 class="fw-bold">Smart TV</h5><br>
+                    <p class="fw-bold price" data-price="25000" style="color:rgb(255, 187, 32);">&#8369; 25,000</p>
+                     <br>
+                    <a href="#" class="FD-Cart addCart"> <i class="fas fa-cart-plus"></i> Add to Cart</a>
+                </div>
+                <img src="../Assets/Images/MobileAndGadgets/smartTV.png" alt="">
+            </div>
+            <div class="FlashDeals productimg">
+                <div class="productCards">
+                    <h5 class="fw-bold">Iphone 14 Pro Max</h5><br>
+                    <p class="fw-bold price" data-price="60000" style="color:rgb(255, 187, 32);">&#8369; 60,000</p>
+                    <a href="#" class="FD-Cart addCart"> <i class="fas fa-cart-plus"></i> Add to Cart</a>
+                </div>
+                <img src="../Assets/Images/MobileAndGadgets/Iphone14.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- Hot deals -->
+    <div class="HD-MainContainer">
+        <h4 class="fw-bold"><i class="fas fa-fire-flame-curved" style="color:rgb(255, 187, 32);"></i> Hot Deals</h4>
+        <div class="HD-Container">
+            <div class="HotDeals">
+                <div class="card " style="width: 18rem;">
+                    <img src="../Assets/Images/MobileAndGadgets/AppleWatch.jpg" class="card-img-top" alt="...">
+                    <div class="card-body productCards">
+                        <h5 class="card-title">Apple Watch</h5>
+                        <p class="card-text price" data-price="5000">&#8369; 5,000</p>
+                         <br>
+                        <a href="#" class="HD-Cart addCart" > <i class="fas fa-cart-plus"></i> Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="HotDeals">
+                <div class="card " style="width: 18rem;">
+                    <img src="../Assets/Images/MobileAndGadgets/AsusVivobook.jpg" class="card-img-top" alt="...">
+                    <div class="card-body productCards">
+                        <h5 class="card-title">Asus VivoBook 15</h5>
+                        <p class="card-text price" data-price="38000">&#8369; 38,000</p>
+                        <br>
+                        <a href="#" class="HD-Cart addCart" > <i class="fas fa-cart-plus"></i> Add to Cart</a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="HotDeals">
+                <div class="card " style="width: 18rem;">
+                    <img src="../Assets/Images/Men's Apparel/KoreanCasualPants.jpg" class="card-img-top" alt="...">
+                    <div class="card-body productCards">
+                        <h5 class="card-title">Korean Casual Pants</h5>
+                        <p class="card-text price" data-price="500">&#8369; 500</p>
+                        <br>
+                        <a href="#" class="HD-Cart addCart" > <i class="fas fa-cart-plus"></i> Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="HotDeals">
+                <div class="card " style="width: 18rem;">
+                    <img src="../Assets/Images/Men's Apparel/VansMensShoes.jpg" class="card-img-top" alt="...">
+                    <div class="card-body productCards">
+                        <h5 class="card-title">Vans Men Shoes</h5>
+                        <p class="card-text price" data-price="2000">&#8369; 2,000</p>
+                        <br>
+                        <a href="#" class="HD-Cart addCart" > <i class="fas fa-cart-plus"></i> Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="HotDeals">
+                <div class="card " style="width: 18rem;">
+                    <img src="../Assets/Images/MobileAndGadgets/AppleWatch.jpg" class="card-img-top" alt="...">
+                    <div class="card-body productCards">
+                        <h5 class="card-title">Apple Watch</h5>
+                        <p class="card-text price" data-price="5000">&#8369; 5,000</p>
+                        <br>
+                        <a href="#" class="HD-Cart addCart" > <i class="fas fa-cart-plus"></i> Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="HotDeals">
+                <div class="card " style="width: 18rem;">
+                    <img src="../Assets/Images/MobileAndGadgets/AsusVivobook.jpg" class="card-img-top" alt="...">
+                    <div class="card-body productCards">
+                        <h5 class="card-title">Asus VivoBook 15</h5>
+                        <p class="card-text price" data-price="38000">&#8369; 38,000</p>
+                        <br>
+                        <a href="#" class="HD-Cart addCart" > <i class="fas fa-cart-plus"></i> Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="HotDeals">
+                <div class="card " style="width: 18rem;">
+                    <img src="../Assets/Images/Men's Apparel/KoreanCasualPants.jpg" class="card-img-top" alt="...">
+                    <div class="card-body productCards">
+                        <h5 class="card-title">Korean Casual Pants</h5>
+                        <p class="card-text price" data-price="500">&#8369; 500</p>
+                        <br>
+                        <a href="#" class="HD-Cart addCart" > <i class="fas fa-cart-plus"></i> Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="HotDeals">
+                <div class="card " style="width: 18rem;">
+                    <img src="../Assets/Images/Men's Apparel/VansMensShoes.jpg" class="card-img-top" alt="...">
+                    <div class="card-body productCards">
+                        <h5 class="card-title productName">Vans Men Shoes</h5>
+                        <p class="card-text price" data-price="2000">&#8369; 2,000</p>
+                        <br>
+                        <a href="#" class="HD-Cart addCart"> <i class="fas fa-cart-plus"></i> Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- footer -->
+            <footer>
+                <div class="footer-content">
+                    <h5>Categories</h5>
+                    <a href="#">Men's Apparel</a><br/>
+                    <a href="#">Women's Apparel</a><br/>
+                    <a href="#">Mobile & Gadgets</a><br/>
+                    <a href="#">Shoes</a>
+                    <a href="#">Bags</a>
+                </div>
+                <div class="footer-content">
+                    <h5>Installments</h5>
+                    <a href="#">Gadgets</a><br/>
+                    <a href="#">Appliances</a><br/>
+                </div>
+                <div class="footer-content">
+                    <h5>Further Information</h5>
+                    <a href="#">Terms & Conditions</a><br/>
+                    <a href="#">Privacy Policy</a><br/>
+                </div>
+                <div class="footer-content">
+                    <h5>Contact Us</h5>
+                    <input type="text" placeholder=" Enter Message" class="form-control"><br/>
+                    <a href="#" class="message-btn">Enter</a><br/>
+                </div>
+                
+                <div class="footer-content">
+                    <hr/>
+                    <p>Coyright 2023 &#169; | All Rights Reserve.</p>
+                </div>
+            </footer>
+
+<!-- Messenger Chat Plugin Code -->
+<div id="fb-root"></div>
+
+<!-- Your Chat Plugin code -->
+<div id="fb-customer-chat" class="fb-customerchat">
+</div>
+
+<script>
+  var chatbox = document.getElementById('fb-customer-chat');
+  chatbox.setAttribute("page_id", "109022442216486");
+  chatbox.setAttribute("attribution", "biz_inbox");
+</script>
+
+<!-- Your SDK code -->
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      xfbml            : true,
+      version          : 'v17.0'
+    });
+  };
+
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+<script src="../JavaScript/cart.js"></script>
+
+</body>
+</html>
